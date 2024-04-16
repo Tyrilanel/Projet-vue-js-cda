@@ -1,4 +1,3 @@
-import ProductsList from "@/components/ProductsList.vue";
 import { defineStore } from "pinia";
 
 export const useProductsStore = defineStore('products', {
@@ -14,10 +13,15 @@ export const useProductsStore = defineStore('products', {
         async fetchProducts() {
             try {
                 const response = await fetch("/products.json");
-                this.productsList = await response.json();
+                const data = await response.json();
+                this.productsList = data.products;
             } catch (error) {
                 console.log(error);
             }
+        },
+
+        getProduct(id) {
+            return this.productsList.find((product) => product.id == id);
         }
     }
 })

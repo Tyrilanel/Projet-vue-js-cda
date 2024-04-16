@@ -37,7 +37,9 @@ const router = createRouter(
 
 router.beforeEach((to, from, next) => {
     const products = useProductsStore();
-    
+    if (products.productsList.length == 0) {
+        products.fetchProducts();
+    }
     next();
 })
 

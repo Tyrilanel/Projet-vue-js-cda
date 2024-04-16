@@ -1,8 +1,8 @@
 <script>
 import Rating from './Rating.vue';
-import products from "../assets/products.json";
-import { mapActions } from 'pinia';
+import { mapActions, mapState } from 'pinia';
 import { useCartStore } from '@/stores/cart';
+import { useProductsStore } from '@/stores/products';
 
     export default{
 
@@ -18,7 +18,6 @@ import { useCartStore } from '@/stores/cart';
     data () {
         return {
             product: null,
-            products: products.products,
             loading: false,
         }
     },
@@ -28,20 +27,17 @@ import { useCartStore } from '@/stores/cart';
             required: true
         }
     },
+    computed: {
+        ...mapState(useProductsStore, ['productsList']),  
+    },
     methods: {
+        ...mapActions(useProductsStore, ['getProduct']),
         async getData() {
             this.loading = true;
-            const target_url = "/product"+ this.product_id +".json";
-            try {
-                const response = await fetch(target_url);
-                this.product = await response.json();
-            } catch (error) {
-                console.log(error);
-            }
+            this.product = this.getProduct(this.product_id);
             return this.loading = false;
         },
         ...mapActions(useCartStore, ['addToCart'])
-
     },
     components: { Rating }
 }
@@ -68,7 +64,7 @@ import { useCartStore } from '@/stores/cart';
         </section>
         <h2 class="center">Nos autres produits</h2>
         <section id="other-products">
-            <div v-for="element in products" :key="element.id">
+            <div v-for="element in productsList" :key="element.id">
                <router-link v-if="parseInt(element.id) != parseInt(product.id)" :to="{name: 'produit', params: {id: element.id}}">{{ element.name }}</router-link>
             </div>
         </section>    
