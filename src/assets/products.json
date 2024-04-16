@@ -1,0 +1,52 @@
+  {
+   "products": [
+        {
+            "id": 21,
+            "name": "Pied de biche" ,
+            "unit_price": 60 ,
+            "quantity": 2 ,
+            "description": "<p> Capable d'<strong>ouvrir</strong> aussi bien votre caisse en bois que le crâne de vos enemis </p>",
+            "rating" : 5
+        },
+        {
+            "id": 9 ,
+            "name": "Master Sword" ,
+            "unit_price": 999 ,
+            "quantity": 1 ,
+            "description": "<p> Une épée, mais uniquement pour les maîtres </p>",
+            "rating": 3.5
+        },
+        {
+            "id": 42 ,
+            "name": "Super Shotgun",
+            "unit_price": 666 ,
+            "quantity": 6 ,
+            "description": "<p> Une solution <strong>radicale</strong> à tous vos problèmes de démons </p>",
+            "rating": 4 
+        },
+        {
+            "id": 16 ,
+            "name":  "Frostmourne",
+            "unit_price": 25000 ,
+            "quantity": 5 ,
+            "description": "<p>Parfaite pour les executions sommaires et les <strong>régicides</strong> paternels </p>",
+            "rating" : 2
+        },
+        {
+            "id": 40 ,
+            "name": "BoltGun" ,
+            "unit_price": 40000 ,
+            "quantity": 7331 ,
+            "description": "<p> gros canons, grosses munitions, gros recul, gros dommages <strong> pour les amateurs de sensations fortes </strong> </p>",
+            "rating": 4.5
+        },
+        {
+            "id": 2004,
+            "name": "Gravity Gun",
+            "unit_price": "10 000 000",
+            "quantity": "6 500 000",
+            "description": "<p> transportez sans effort n'importe quel objet pour pouvoir les ranger en hauteur ou sur vos enemis ... ou alors desactivez la sécuritée et transformez les en confetis directement! </p>",
+            "rating": 5
+        }
+   ]
+} 

@@ -1,0 +1,9 @@
+{
+    "id": 9 ,
+    "name": "Master Sword" ,
+    "unit_price": 999 ,
+    "quantity": 1 ,
+    "description": "<p> Une épée, mais uniquement pour les maîtres </p>",
+    "rating": 3.5,
+    "img": "/imgs/p e_de_L gende.webp"
+}

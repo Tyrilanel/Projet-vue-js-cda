@@ -1,0 +1,9 @@
+{
+    "id": 16 ,
+    "name":  "Frostmourne",
+    "unit_price": 25000 ,
+    "quantity": 5 ,
+    "description": "<p>Parfaite pour les executions sommaires et les <strong>régicides</strong> paternels </p>",
+    "rating" : 2,
+    "img": "/imgs/Epee-Frostmourne-1.png"
+}

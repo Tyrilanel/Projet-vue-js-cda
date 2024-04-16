@@ -1,0 +1,6 @@
+{
+    "products": [
+        {"id":2004, "name": "Gravity gun", "quantity": 1, "unit_price": 10000000},
+        {"id":21, "name":"Crowbar", "quantity":27, "unit_price": 60}
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "id":21,
+    "name":"Pied de biche",
+    "unit_price":60,
+    "quantity":2,
+    "description":"<p> Capable d'<strong>ouvrir</strong> aussi bien votre caisse en bois que le crâne de vos enemis </p>",
+    "rating":5,
+    "img": "/imgs/Crowbar2.webp"
+}

@@ -1,0 +1,9 @@
+{
+    "id": 42 ,
+    "name": "Super Shotgun",
+    "unit_price": 666 ,
+    "quantity": 6 ,
+    "description": "<p> Une solution <strong>radicale</strong> à tous vos problèmes de démons </p>",
+    "rating": 4,
+    "img": "/imgs/Doom4_Codex_SuperShotgun.png"
+}

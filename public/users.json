@@ -1,0 +1,7 @@
+{
+    "users": [
+        {"id": 1, "firstName": "John", "lastName": "Doe", "pseudo": "jdoe", "email": "gK5wz@example.com", "password": "1234"},
+        {"id": 2, "firstName": "Gordon", "lastName": "Freeman", "pseudo": "Freeman", "email": "g.freeman@black-mesa.com", "password": "hl3"},
+        {"id": 3, "firstName": "Morgan", "lastName": "Freeman", "pseudo": "God", "email": "m.freeman@black-mesa.com", "password": "admin"}
+    ]
+}

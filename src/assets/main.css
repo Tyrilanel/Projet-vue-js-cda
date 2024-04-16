@@ -1,0 +1,82 @@
+@import './base.css';
+
+#app {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+button, input[type="submit"] {
+  border: 1px solid black;
+  border-left-color: #bbbbbb;
+  border-top-color: #bbbbbb;
+  border-right-color: #454545;
+  border-bottom-color: #454545;
+  
+  background-color: #303030;
+  padding: 0 4px;
+  user-select: none;
+
+  min-height: 28px;
+  min-width: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: white;
+
+  margin: 1em auto 1em auto;
+
+  cursor: pointer;
+
+  &:active:not(:disabled) {
+    border-left-color: #454545;
+    border-top-color: #454545;
+    border-right-color: #bbbbbb;
+    border-bottom-color: #bbbbbb;
+  }
+
+  &:disabled{
+    border-color: grey;
+    color: grey;
+  }
+
+} 
+
+a,
+.green {
+  text-decoration: none;
+  color: #FFBA10;
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: #fb7e14;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+
+  ::selection{
+   background: #fb7c14b1;
+   color: white,
+  }
+}
