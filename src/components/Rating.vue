@@ -39,5 +39,8 @@
     .fa-star, .fa-star-half-o, .fa-star-o{
         color: #fb7e14 !important;
     }
-    
+    .stars{
+        display: inline-block;
+        width: auto;
+    }
 </style>

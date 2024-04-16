@@ -48,4 +48,7 @@
     .error {
         text-align: center;
     }
+    form {
+        max-width: 80%;
+    }
 </style>

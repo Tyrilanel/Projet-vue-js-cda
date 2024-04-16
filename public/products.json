@@ -5,7 +5,7 @@
             "name":"Pied de biche",
             "unit_price":60,
             "quantity":2,
-            "description":"<p> Capable d'<strong>ouvrir</strong> aussi bien votre caisse en bois que le crâne de vos enemis </p>",
+            "description":"<p> Capable d'<strong>ouvrir</strong> aussi bien votre caisse en bois que le crâne de vos enemis. </p>",
             "rating":5,
             "img": "/imgs/Crowbar2.webp"
         },
@@ -14,7 +14,7 @@
             "name": "Master Sword" ,
             "unit_price": 999 ,
             "quantity": 1 ,
-            "description": "<p> Une épée, mais uniquement pour les maîtres </p>",
+            "description": "<p> Une épée, mais uniquement pour les maîtres. </p>",
             "rating": 3.5,
             "img": "/imgs/p e_de_L gende.webp"
         },
@@ -23,7 +23,7 @@
             "name": "Super Shotgun",
             "unit_price": 666 ,
             "quantity": 6 ,
-            "description": "<p> Une solution <strong>radicale</strong> à tous vos problèmes de démons </p>",
+            "description": "<p> Une solution <strong>radicale</strong> à tous vos problèmes de démons. </p>",
             "rating": 4,
             "img": "/imgs/Doom4_Codex_SuperShotgun.png"
         },
@@ -32,7 +32,7 @@
             "name":  "Frostmourne",
             "unit_price": 25000 ,
             "quantity": 5 ,
-            "description": "<p>Parfaite pour les executions sommaires et les <strong>régicides</strong> paternels </p>",
+            "description": "<p>Parfaite pour les executions sommaires et les <strong>régicides</strong> paternels. </p>",
             "rating" : 2,
             "img": "/imgs/Epee-Frostmourne-1.png"
         },
@@ -41,7 +41,7 @@
             "name": "BoltGun" ,
             "unit_price": 40000 ,
             "quantity": 7331 ,
-            "description": "<p> gros canons, grosses munitions, gros recul, gros dommages <strong> pour les amateurs de sensations fortes </strong> </p>",
+            "description": "<p> gros canons, grosses munitions, gros recul, gros dommages pour les amateurs de sensations fortes. </p>",
             "rating": 4.5,
             "img": "/imgs/heavybolter-6b439ebf.webp"
         },
@@ -50,7 +50,7 @@
             "name": "Gravity Gun",
             "unit_price": 10000000,
             "quantity": 6500000,
-            "description": "<p> Transportez sans effort n'importe quel objet pour pouvoir les ranger en hauteur ou sur vos enemis ... Ou alors desactivez la sécuritée et transformez-les en confetis directement! </p> <p><b>Attention</b> ne convient pas aux enfants de moins de 26 ans</p>",
+            "description": "<p> Transportez sans effort n'importe quel objet pour pouvoir les ranger en hauteur ou sur vos enemis ... Ou alors desactivez la sécuritée et transformez-les en confetis directement! </p> <p><b>Attention</b> ne convient pas aux enfants de moins de 26 ans.</p>",
             "rating": 5,
             "img": "/imgs/CH2_Gravity_Gun_HD.webp"
         }

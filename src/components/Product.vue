@@ -5,6 +5,13 @@ import Rating from './Rating.vue';
         product: Object,
         isCheapest: Boolean,
     },
+    computed: {
+      truncateDescription(){
+        if (this.product.description.length <= 120) { return this.product.description; }
+        const subString = this.product.description.slice(0, 119);
+        return subString.slice(0, subString.lastIndexOf(" ")) + " [&hellip;]" + "</p>";
+      },
+    },
     components: { Rating }
 }
 </script>
@@ -16,12 +23,13 @@ import Rating from './Rating.vue';
         {{ product.name }}
       </div>
       <div class="price">
-        <b>Prix:</b> {{ product.unit_price }} €
+        Prix: {{ product.unit_price }} €
       </div>
       <div class="rating">
-        <Rating :note="product.rating"></Rating>
+        avis moyen: <Rating :note="product.rating"></Rating>
       </div>
-      
+      <hr>
+      <div v-html="truncateDescription"></div>
 
   </router-link>
   </template>
@@ -35,8 +43,11 @@ import Rating from './Rating.vue';
     flex: auto;
   }
   .price{
-    padding-left: 2%;
     min-width: 20%;
+  }
+  hr{
+    width: 80%;
+    margin: 1em auto;
   }
   .product-link{
     color: white;

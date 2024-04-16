@@ -81,9 +81,10 @@ header {
 @media (min-width: 1024px) {
 
   header {
-    margin-right: auto;
     width: 35%;
     align-self: center;
+    margin-right: auto;
+    flex-shrink: 0;
   }
 
   header section {
@@ -103,9 +104,9 @@ header {
   }
 
   .content{
-    width: 50%;
-    max-width: 50%;
+    margin-left:1em;
     margin-right: auto;
+    flex-grow: 0.7;
   }
 
   nav{

@@ -79,9 +79,14 @@
     color: white;
     width: 100%;
   }
+  form label {
+    text-align: left;
+    padding-left: 20% ;
+    flex-grow: 1;
+  }
   form div{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-bottom: 1em;
   }
 
@@ -93,7 +98,7 @@
 
   form input, select{
     box-shadow: none;
-    width : 60%
+    width : 55%
   }
 
   input[type="checkbox"]{
