@@ -1,9 +1,10 @@
 <script>
 import Rating from './Rating.vue';
+import { mapActions } from 'pinia';
+import { useCartStore } from '@/stores/cart';
     export default{
     props: {
         product: Object,
-        isCheapest: Boolean,
     },
     computed: {
       truncateDescription(){
@@ -12,6 +13,9 @@ import Rating from './Rating.vue';
         return subString.slice(0, subString.lastIndexOf(" ")) + " [&hellip;]" + "</p>";
       },
     },
+    methods: {
+        ...mapActions(useCartStore, ['addToCart']),
+    },
     components: { Rating }
 }
 </script>
@@ -19,7 +23,7 @@ import Rating from './Rating.vue';
 <template>
   <router-link class="product-link" :to="{name:'produit', params: {id: product.id}}">
 
-      <div class="product-name" :class="{cheap: isCheapest}">
+      <div class="product-name">
         {{ product.name }}
       </div>
       <div class="price">
@@ -30,15 +34,24 @@ import Rating from './Rating.vue';
       </div>
       <hr>
       <div v-html="truncateDescription"></div>
+      <button class="add-to-cart" @click.prevent="addToCart(product.id, product.name, product.unit_price)">+</button>
 
   </router-link>
   </template>
 
 <style scoped>
 
-  .cheap{
-    background-color: #fb7e14;
+  button.add-to-cart{
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    margin-bottom: 0;
   }
+
   .product-name{
     flex: auto;
   }
@@ -52,5 +65,6 @@ import Rating from './Rating.vue';
   .product-link{
     color: white;
     width: 100%;
+    position: relative;
   }
 </style>

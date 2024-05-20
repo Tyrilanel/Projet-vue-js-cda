@@ -45,6 +45,10 @@ export const useCartStore = defineStore('cart', {
         deleteArticle(id_product){
             const index = this.cart.findIndex((element) => element.id == id_product);
             this.cart.splice(index, 1);
+        },
+
+        clearCart(){
+            this.cart = [];
         }
     }
 })

@@ -43,6 +43,9 @@ import { useProductsStore } from '@/stores/products';
 }
 </script>
 <template>
+    <nav>
+        <router-link to="/">Accueil</router-link> > <router-link to="/products">Produits</router-link> > {{ product.name }}
+    </nav>
     <div v-if="loading">
         <img src="/imgs/spinner.svg" alt="image indiquant un chargement">
     </div>
@@ -96,38 +99,10 @@ import { useProductsStore } from '@/stores/products';
 }
 
 button {
-  border: 1px solid black;
-  border-left-color: #bbbbbb;
-  border-top-color: #bbbbbb;
-  border-right-color: #454545;
-  border-bottom-color: #454545;
-  
-  background-color: #303030;
-  padding: 0 4px;
-  user-select: none;
-
-  min-height: 28px;
-  min-width: 80px;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 12px;
-  color: white;
-
-  margin: 1em auto 1em auto;
-
-  cursor: pointer;
-
-  &:active:not(.disabled) {
-    border-left-color: #454545;
-    border-top-color: #454545;
-    border-right-color: #bbbbbb;
-    border-bottom-color: #bbbbbb;
-  }
+ 
+  justify-content: center;
+  width: 80px;
+  height: 23px;
 
 }  
 </style>

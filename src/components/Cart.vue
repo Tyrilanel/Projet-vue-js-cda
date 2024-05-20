@@ -11,7 +11,7 @@ import { mapWritableState, mapActions } from 'pinia';
         },
 
         methods:{
-            ...mapActions(useCartStore, ['deleteArticle']),
+            ...mapActions(useCartStore, ['deleteArticle', 'clearCart']),
         },
 
         components: { CartLine }
@@ -47,8 +47,10 @@ import { mapWritableState, mapActions } from 'pinia';
                 </tr>
             </tfoot>
         </table>
-
-        <button>Commander</button>
+        <section class="button-group">
+            <button id="clear" @click="clearCart">Vider le pannier</button>
+            <button id="order">Commander</button>
+        </section>
 	</div>
 </template>
 
@@ -60,4 +62,16 @@ import { mapWritableState, mapActions } from 'pinia';
         border-top: 2px solid #FFFFFF;
         text-align: center;
     }
+
+    .button-group{
+        display: flex;
+    }
+
+    button {
+        width: 100px;
+        height: 30px;
+        justify-content: center;
+    }
+
+    
 </style>

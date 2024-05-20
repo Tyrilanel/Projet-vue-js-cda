@@ -5,11 +5,7 @@
     export default{
         computed: {
             ...mapState(useProductsStore, ['productsList']),
-            cheaperProductPrice() {
-                return this.productsList.toSorted(function (a, b) {
-                    return a.unit_price - b.unit_price;
-                })[0].unit_price;
-            }
+
         },
     components: { Product }
 }
@@ -17,11 +13,10 @@
 
 <template>
     <div>
-        <h1>Nos produits</h1>
-        <h2>Nombre de produits: {{ this.productsList.length}}</h2>
+        <h1>Nos Articles</h1>
         <section id="products-list">
             <div v-for="product in this.productsList" :key="product.id" class="product">
-                <Product :product="product" :isCheapest="product.unit_price === cheaperProductPrice"></Product>
+                <Product :product="product"></Product>
             </div>
         </section>
     </div>
@@ -37,7 +32,13 @@
         display: flex;
         width: 45%;
         height : 200px;
-        border: 1px solid #454545 ;
+        box-shadow: 0.2em 0.2em 0.5em 0px #5e5d5d53;
         margin-top: 1em;
+
+        &:hover{
+            box-shadow: 0.2em 0.2em 0.5em 0px lightgray;
+            transform: scale(1.03);
+            transition: 0.4s;
+        }
     }
 </style>

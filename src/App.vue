@@ -15,7 +15,8 @@ const storeProducts = useProductsStore();
 <template>
   <header>
     <section>
-      <img alt="Vue logo" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Half-Life_lambda_logo.svg/365px-Half-Life_lambda_logo.svg.png" width="125" height="125" />
+      <img alt="Vue logo" class="logo" src="/imgs/Half-Life_Lambda_orange.svg" />
+      <img />
 
       <div class="wrapper">
         <h1>Crowbar corp</h1>
@@ -51,9 +52,8 @@ header {
   justify-content: space-around;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.logo{
+  width: 75px;
 }
 
 .list {
@@ -80,6 +80,13 @@ header {
 
 @media (min-width: 1024px) {
 
+  .logo {
+    display: block;
+    margin: 0 auto 2rem;
+    width: 125px;
+    height: 125px;
+  }
+
   header {
     width: 35%;
     align-self: center;
@@ -91,10 +98,6 @@ header {
     display: flex;
     flex-direction: column;
     place-items: center;
-  }
-
-  .logo {
-    margin: 0 0 0.5rem 0;
   }
 
   header .wrapper {
